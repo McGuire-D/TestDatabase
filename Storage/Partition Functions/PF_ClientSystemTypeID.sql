@@ -1,0 +1,4 @@
+CREATE PARTITION FUNCTION [PF_ClientSystemTypeID] ([int])
+AS RANGE LEFT
+FOR VALUES (-1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+GO
