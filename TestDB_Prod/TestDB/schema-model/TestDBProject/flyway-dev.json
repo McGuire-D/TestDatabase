@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "name": "TestDBProject",
+  "id": "a3ab8a26-f3e1-4482-be2b-e8af3b24f8a2",
+  "databaseType": "SqlServer",
+  "development": {
+    "scriptsFolder": "./schema-model"
+  },
+  "deployment": {
+    "flywayConfFiles": [
+      "./flyway.conf"
+    ],
+    "generateUndoScripts": true,
+    "targetDatabases": [
+      {
+        "connectionProvider": {
+          "type": "UsernamePassword",
+          "url": "jdbc:sqlserver://localhost;databaseName=TestDB_Prod;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+        },
+        "schemas": [],
+        "displayName": "Development database"
+      }
+    ]
+  }
+}

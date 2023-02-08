@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "developmentDatabase": {
+    "connectionProvider": {
+      "url": "jdbc:sqlserver://localhost;encrypt=true;integratedSecurity=true;databaseName=TestDB;trustServerCertificate=true",
+      "type": "UsernamePassword"
+    }
+  },
+  "deployment": {
+    "shadowDatabase": {
+      "connectionProvider": {
+        "url": "jdbc:sqlserver://localhost;encrypt=true;integratedSecurity=true;databaseName=TestDB_Shadow;trustServerCertificate=true",
+        "type": "UsernamePassword"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE   FUNCTION [dbo].[GetFunction1]
+(
+    @Id1 INT,
+    @Id2 INT
+)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT 1 "a"
+);
+GO

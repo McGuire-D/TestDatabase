@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "developmentDatabase": {
+    "connectionProvider": {
+      "url": "jdbc:sqlserver://localhost;encrypt=true;databaseName=TestDB_Dev;trustServerCertificate=true",
+      "username": "sa",
+      "password": {
+        "name": "Flyway Desktop 8e19c0f4-7c18-49e0-a4f8-fbf7efc7104c",
+        "secretType": "DefaultSecretStore"
+      },
+      "type": "UsernamePassword"
+    }
+  },
+  "deployment": {
+    "shadowDatabase": {
+      "connectionProvider": {
+        "url": "jdbc:sqlserver://localhost;encrypt=true;databaseName=TestDB_Shadow;trustServerCertificate=true",
+        "username": "sa",
+        "password": {
+          "name": "Flyway Desktop 6527a84f-512a-40bb-bd86-7226e533c8f2",
+          "secretType": "DefaultSecretStore"
+        },
+        "type": "UsernamePassword"
+      }
+    }
+  }
+}
